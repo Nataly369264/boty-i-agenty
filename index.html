@@ -112,6 +112,55 @@
     </div>
   </div>
 </section>
+<section class="блок блок--прайс-лист блок--громко светлый второй" id="экран-02" data-тип="прайс-лист" data-вёрстка="своя">
+<div class="блок__внутри">
+  <div class="прайс">
+    <div class="прайс__шапка">
+      <p class="кикер">Услуги</p>
+      <h2>Что беру в работу</h2>
+      <p class="лид секция__лид">Для тех, у кого нет отдела разработки и нет задачи его заводить, а рутина забирает время у основной работы</p>
+    </div>
+    <div class="прайс__тело">
+      <div class="прайс__список">
+        <article class="строка">
+          <div class="строка__основа">
+            <h3 class="строка__имя">Телеграм-бот под задачу</h3>
+            <p class="строка__текст">заявки, запись, ответы на типовые вопросы, выдача материалов; что бот делает и чего не делает — договариваемся до старта</p>
+          </div>
+          <p class="строка__цена"><b>от 15 000 ₽</b></p>
+        </article>
+        <article class="строка">
+          <div class="строка__основа">
+            <h3 class="строка__имя">Агентная система под задачу</h3>
+            <p class="строка__текст">система сама собирает данные и готовит результат — именно это делает мой разбор страниц. Где может ошибиться — называю до старта</p>
+          </div>
+          <p class="строка__цена"><b>от 40 000 ₽</b><span>итог зависит от объёма: системы очень разные</span></p>
+        </article>
+        <article class="строка">
+          <div class="строка__основа">
+            <h3 class="строка__имя">Разбор продающей страницы</h3>
+            <p class="строка__текст">где страница упускает тех, кто мог бы стать клиентом, и что на ней уже работает, с цитатами; без плана исправления</p>
+            <a class="строка__ссылка" href="#экран-04">Проверить свою страницу</a>
+          </div>
+          <p class="строка__цена"><b>бесплатно</b></p>
+        </article>
+        <article class="строка">
+          <div class="строка__основа">
+            <h3 class="строка__имя">План правок</h3>
+            <p class="строка__текст">по итогам разбора: что менять, в каком порядке и что пока не трогать; готовых текстов не пишу</p>
+          </div>
+          <p class="строка__цена"><span>стоимость</span><b class="слова">по итогам разбора</b></p>
+        </article>
+      </div>
+      <div class="граница">
+        <p>Не беру: рекламу, копирайтинг, поддержку чужого кода.</p>
+        <p>Итог зависит от того, что должен уметь бот: например, принимать оплату, записывать в календарь или отвечать с помощью ИИ. Сервер и ИИ-сервисы оплачиваются отдельно — сумму называю до старта</p>
+      </div>
+      <div class="действие"><a class="кнопка кнопка--главная" href="https://t.me/natalogics">Обсудить задачу</a></div>
+    </div>
+  </div>
+</div>
+</section>
 <section class="блок блок--кейс светлый" id="экран-03" data-тип="кейс" data-вёрстка="своя">
 <div class="блок__внутри">
   <div class="секция__шапка">
@@ -141,7 +190,118 @@
   </div>
 </div>
 </section>
-<section class="блок блок--о-себе светлый второй" id="экран-05" data-тип="о-себе" data-вёрстка="своя">
+<section class="блок блок--самопроверка светлый второй" id="экран-04" data-тип="самопроверка" data-вёрстка="своя">
+
+<div class="блок__внутри">
+  <div class="секция__шапка">
+    <p class="кикер">Самопроверка</p>
+    <h2>Семь вопросов к вашей продающей странице</h2>
+    <p class="лид секция__лид">Ответьте на все семь вопросов: «да», «нет» или «не уверены» — итог появится под последним. Ответы остаются у вас в браузере и никуда не отправляются</p>
+  </div>
+  <div class="проверка секция__тело">
+    <fieldset class="фильтр" data-фильтр>
+      <legend data-текст>Есть ли у вас страница, которая продаёт конкретную услугу или программу — то, что можно купить или на что можно записаться?</legend>
+      <div class="ответы" data-ответы hidden>
+        <label class="ответ"><input type="radio" name="фильтр-04" value="да"><span>Да</span></label>
+        <label class="ответ"><input type="radio" name="фильтр-04" value="нет"><span>Нет</span></label>
+      </div>
+    </fieldset>
+    <p data-ветка-нет hidden>Разбор делается для продающих страниц — визитке, прайсу или странице «обо мне» он не нужен. Если вам мешает рутина — запись, заявки, одни и те же вопросы, — напишите, обсудим бота</p>
+    <ol class="строки" data-вопросы>
+      <li class="строка" data-вопрос>
+        <fieldset>
+          <legend data-текст>По первому экрану понятно, что именно вы продаёте и кому?</legend>
+          <div class="ответы" data-ответы hidden>
+            <label class="ответ"><input type="radio" name="вопрос-04-1" value="да"><span>Да</span></label>
+            <label class="ответ"><input type="radio" name="вопрос-04-1" value="нет"><span>Нет</span></label>
+            <label class="ответ"><input type="radio" name="вопрос-04-1" value="не-уверены"><span>Не уверены</span></label>
+          </div>
+        </fieldset>
+        <p class="почему" data-почему>Если с первого взгляда непонятно, про что страница, её закрывают, не дочитав</p>
+      </li>
+      <li class="строка" data-вопрос>
+        <fieldset>
+          <legend data-текст>Цена указана на самой странице — не «по запросу» и не в прайсе на другой странице?</legend>
+          <div class="ответы" data-ответы hidden>
+            <label class="ответ"><input type="radio" name="вопрос-04-2" value="да"><span>Да</span></label>
+            <label class="ответ"><input type="radio" name="вопрос-04-2" value="нет"><span>Нет</span></label>
+            <label class="ответ"><input type="radio" name="вопрос-04-2" value="не-уверены"><span>Не уверены</span></label>
+          </div>
+        </fieldset>
+        <p class="почему" data-почему>Когда цену нужно искать, часть людей уходит, не дойдя до вопроса «подходит ли мне»</p>
+      </li>
+      <li class="строка" data-вопрос>
+        <fieldset>
+          <legend data-текст>Кнопка записи или покупки видна без долгой прокрутки и повторяется ниже?</legend>
+          <div class="ответы" data-ответы hidden>
+            <label class="ответ"><input type="radio" name="вопрос-04-3" value="да"><span>Да</span></label>
+            <label class="ответ"><input type="radio" name="вопрос-04-3" value="нет"><span>Нет</span></label>
+            <label class="ответ"><input type="radio" name="вопрос-04-3" value="не-уверены"><span>Не уверены</span></label>
+          </div>
+        </fieldset>
+        <p class="почему" data-почему>Решение созревает в разных местах страницы — хорошо, если кнопка окажется рядом в этот момент</p>
+      </li>
+      <li class="строка" data-вопрос>
+        <fieldset>
+          <legend data-текст>Написано, что человек получит на выходе, — конкретно, а не общими словами?</legend>
+          <div class="ответы" data-ответы hidden>
+            <label class="ответ"><input type="radio" name="вопрос-04-4" value="да"><span>Да</span></label>
+            <label class="ответ"><input type="radio" name="вопрос-04-4" value="нет"><span>Нет</span></label>
+            <label class="ответ"><input type="radio" name="вопрос-04-4" value="не-уверены"><span>Не уверены</span></label>
+          </div>
+        </fieldset>
+        <p class="почему" data-почему>Общие слова не с чем сравнить, и выбор откладывается</p>
+      </li>
+      <li class="строка" data-вопрос>
+        <fieldset>
+          <legend data-текст>Есть отзывы с именами и конкретным результатом?</legend>
+          <div class="ответы" data-ответы hidden>
+            <label class="ответ"><input type="radio" name="вопрос-04-5" value="да"><span>Да</span></label>
+            <label class="ответ"><input type="radio" name="вопрос-04-5" value="нет"><span>Нет</span></label>
+            <label class="ответ"><input type="radio" name="вопрос-04-5" value="не-уверены"><span>Не уверены</span></label>
+          </div>
+        </fieldset>
+        <p class="почему" data-почему>Отзыв без имени и без того, что изменилось, трудно проверить — ему меньше верят</p>
+      </li>
+      <li class="строка" data-вопрос>
+        <fieldset>
+          <legend data-текст>Понятно, что будет, если не подойдёт: гарантия, условия возврата, пробная встреча?</legend>
+          <div class="ответы" data-ответы hidden>
+            <label class="ответ"><input type="radio" name="вопрос-04-6" value="да"><span>Да</span></label>
+            <label class="ответ"><input type="radio" name="вопрос-04-6" value="нет"><span>Нет</span></label>
+            <label class="ответ"><input type="radio" name="вопрос-04-6" value="не-уверены"><span>Не уверены</span></label>
+          </div>
+        </fieldset>
+        <p class="почему" data-почему>Страх ошибиться с выбором — частая причина не записаться, даже когда всё остальное подходит</p>
+      </li>
+      <li class="строка" data-вопрос>
+        <fieldset>
+          <legend data-текст>Понятно, что произойдёт после нажатия кнопки — какой первый шаг и сколько он занимает?</legend>
+          <div class="ответы" data-ответы hidden>
+            <label class="ответ"><input type="radio" name="вопрос-04-7" value="да"><span>Да</span></label>
+            <label class="ответ"><input type="radio" name="вопрос-04-7" value="нет"><span>Нет</span></label>
+            <label class="ответ"><input type="radio" name="вопрос-04-7" value="не-уверены"><span>Не уверены</span></label>
+          </div>
+        </fieldset>
+        <p class="почему" data-почему>Когда непонятно, что будет после нажатия, решение откладывают — и часто к нему не возвращаются</p>
+      </li>
+    </ol>
+    <div class="врезка итог" data-итог aria-live="polite" hidden>
+      <p class="итог__счёт" data-итог-есть>Стоит проверить: <span data-число>0</span> <span data-слово data-формы="пункт|пункта|пунктов">пунктов</span> из 7</p>
+      <ul data-итог-список></ul>
+      <p data-итог-все-да>По вашим ответам основа на месте. Разбор страницы покажет то, что изнутри не видно</p>
+    </div>
+    <div class="низ">
+      <p class="граница">Это самопроверка по вашим ответам. Разбор смотрит на саму страницу — по 27 принципам, с цитатами прямо с неё. Он показывает, что мешает, но сам клиентов не приведёт</p>
+      <div class="действие">
+        <a class="кнопка кнопка--главная" href="https://t.me/natalogics">Прислать ссылку</a>
+        <p class="мелко">Пришлите ссылку — разбор бесплатный. Смотрю каждую страницу сама, поэтому беру не больше двух в неделю</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="блок блок--о-себе светлый" id="экран-05" data-тип="о-себе" data-вёрстка="своя">
 <div class="блок__внутри">
   <div class="о-себе">
     <div class="о-себе__шапка">
@@ -177,7 +337,7 @@
   </div>
 </div>
 </section>
-<section class="блок блок--вопросы-ответы светлый" id="экран-06" data-тип="вопросы-ответы" data-вёрстка="своя">
+<section class="блок блок--вопросы-ответы светлый второй" id="экран-06" data-тип="вопросы-ответы" data-вёрстка="своя">
 <div class="блок__внутри">
   <div class="вопросы-сетка">
     <div class="вопросы__шапка">
@@ -302,6 +462,56 @@
     пометить();
   }, { threshold: 0 });
   for (var k = 0; k < цели.length; k++) { наблюдатель.observe(цели[k]); }
+})();
+</script>
+<script>
+(function () {
+  document.querySelectorAll("section.блок--самопроверка").forEach(function (экран) {
+    function все(что, где) { return Array.prototype.slice.call((где || экран).querySelectorAll(что)); }
+    function показать(эл, да) { if (эл) { эл.hidden = !да; эл.style.display = да ? "" : "none"; } }
+    function ответ(где) { var в = где && где.querySelector("input:checked"); return в ? в.value : ""; }
+    function форма(n, формы) {
+      var д = n % 10, с = n % 100;
+      return формы[д === 1 && с !== 11 ? 0 : д >= 2 && д <= 4 && (с < 12 || с > 14) ? 1 : 2] || формы[0];
+    }
+    var фильтр = экран.querySelector("[data-фильтр]"), ветка = экран.querySelector("[data-ветка-нет]");
+    var блок = экран.querySelector("[data-вопросы]"), вопросы = все("[data-вопрос]");
+    var итог = экран.querySelector("[data-итог]");
+    if (!вопросы.length || !итог) return;
+    var есть = итог.querySelector("[data-итог-есть]"), всеДа = итог.querySelector("[data-итог-все-да]");
+    var список = итог.querySelector("[data-итог-список]"), число = итог.querySelector("[data-число]");
+    var слово = итог.querySelector("[data-слово]");
+    function строка(вопрос) {
+      var пункт = document.createElement("li"), имя = document.createElement("b"), почему = document.createElement("span");
+      [[имя, "[data-текст]"], [почему, "[data-почему]"]].forEach(function (пара) {
+        var откуда = вопрос.querySelector(пара[1]);
+        if (!откуда) return;
+        Array.prototype.forEach.call(откуда.childNodes, function (узел) { пара[0].appendChild(узел.cloneNode(true)); });
+        пункт.appendChild(пара[0]);
+      });
+      return пункт;
+    }
+    function пересчитать() {
+      var путь = фильтр ? ответ(фильтр) : "да";
+      показать(ветка, путь === "нет");
+      показать(блок, путь === "да");
+      var слабые = вопросы.filter(function (в) { var о = ответ(в); return о && о !== "да"; });
+      var готово = путь === "да" && вопросы.every(ответ);
+      показать(итог, готово);
+      if (!готово) return;
+      показать(есть, слабые.length > 0);
+      показать(список, слабые.length > 0);
+      показать(всеДа, слабые.length === 0);
+      if (число) число.textContent = String(слабые.length);
+      if (слово && слово.getAttribute("data-формы")) слово.textContent = форма(слабые.length, слово.getAttribute("data-формы").split("|"));
+      if (список) { список.textContent = ""; слабые.forEach(function (в) { список.appendChild(строка(в)); }); }
+    }
+    все("[data-ответы]").forEach(function (э) { показать(э, true); });
+    все("[data-почему]").forEach(function (э) { показать(э, false); });
+    экран.classList.add("самопроверка--живая");
+    экран.addEventListener("change", пересчитать);
+    пересчитать();
+  });
 })();
 </script>
 </body>
