@@ -1,7 +1,7 @@
 
 
 body { font: var(--кегль-текст)/1.6 var(--шрифт-текста); color: var(--цвет-текст);
-       background: var(--цвет-фон); margin: 0; -webkit-font-smoothing: antialiased; }
+       background: var(--цвет-фон); margin: 0; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 h1 { font-size: var(--кегль-h1); font-weight: 700; line-height: 1.05; letter-spacing: -0.025em; }
 h2 { font-size: var(--кегль-h2); font-weight: 700; line-height: 1.12; letter-spacing: -0.015em; }
 .лид { font-size: var(--кегль-лид, var(--кегль-текст)); line-height: 1.55; color: var(--цвет-текст-мягкий); }  .акцент { font-style: normal; color: var(--цвет-акцент); }
@@ -1847,6 +1847,12 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-04.светлый [data-итог-список] li { border-left-color: var(--цвет-тёплый); }
   #экран-04.тёмный [data-итог-список] li { border-left-color: var(--цвет-тёплый); }
 
+  @media (max-width: 899px) {
+    #экран-04 .ответы { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
+    #экран-04 .строка .ответы { margin-left: -2.5rem; }
+    #экран-04 .ответ span { white-space: normal; }
+  }
+
   @media (min-width: 900px) {
     #экран-04 .проверка { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
     #экран-04 .фильтр { padding: 1.5rem 1.75rem; }
@@ -2024,6 +2030,9 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   @media (max-width: 600px) {
     #экран-07 { margin-bottom: calc(-5em - env(safe-area-inset-bottom)); }
     #экран-07 .блок__внутри { padding-bottom: calc(5em + env(safe-area-inset-bottom)); }
+
+    #экран-07 .строка__знак { grid-row: 1; }
+    #экран-07 .строка__адрес { grid-column: 1 / -1; margin-top: .625rem; }
   }
 
   @media (min-width: 900px) {
