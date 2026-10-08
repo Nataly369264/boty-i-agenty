@@ -112,6 +112,13 @@
     </div>
   </div>
 </section>
+<style>
+/* 08.10.2026, правка по скриншоту владелицы: на невысоком телефоне кикер ложился на руки и сливался
+   с кожей. Фото растворяется в фон раньше (было 58 → 96 %), строка лежит на тёмном. */
+@media (max-width: 899px) {
+  #экран-1 .картинка--сцена img { mask-image: linear-gradient(to bottom, black 52%, transparent 84%); -webkit-mask-image: linear-gradient(to bottom, black 52%, transparent 84%); }
+}
+</style>
 <section class="блок блок--прайс-лист блок--громко светлый второй" id="экран-02" data-тип="прайс-лист" data-вёрстка="своя">
 <div class="блок__внутри">
   <div class="прайс">
