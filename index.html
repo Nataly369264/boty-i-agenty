@@ -117,6 +117,18 @@
    с кожей. Фото растворяется в фон раньше (было 58 → 96 %), строка лежит на тёмном. */
 @media (max-width: 899px) {
   #экран-1 .картинка--сцена img { mask-image: linear-gradient(to bottom, black 52%, transparent 84%); -webkit-mask-image: linear-gradient(to bottom, black 52%, transparent 84%); }
+  /* Второй заход того же дня: на узком телефоне с крупным текстом блок текста выше, и строка снова
+     вставала на руку. Тёмная полоса привязана к самой строке и ездит вместе с ней — от высоты экрана
+     и кегля не зависит; сверху и снизу сходит на нет, шва нет. */
+  #экран-1 .первый-экран__текст { isolation: isolate; }
+  #экран-1 .кикер { position: relative; }
+  #экран-1 .кикер::after { content: ""; position: absolute; z-index: -1; pointer-events: none;
+    left: -50vw; right: -50vw; top: -3.5em; bottom: -5em;
+    background: linear-gradient(to bottom, transparent 0%,
+      color-mix(in srgb, var(--вуаль-ключа, var(--цвет-тёмный-фон)) 50%, transparent) 22%,
+      color-mix(in srgb, var(--вуаль-ключа, var(--цвет-тёмный-фон)) 88%, transparent) 36%,
+      color-mix(in srgb, var(--вуаль-ключа, var(--цвет-тёмный-фон)) 88%, transparent) 58%,
+      transparent 100%); }
 }
 </style>
 <section class="блок блок--прайс-лист блок--громко светлый второй" id="экран-02" data-тип="прайс-лист" data-вёрстка="своя">
